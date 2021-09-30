@@ -42,7 +42,7 @@ class SearchService
         
         $resultIds = $results->unique()->pluck('id')->take($limit);
         return ($resultIds->isNotEmpty()) ? $modelClass::whereIn('id', $resultIds)->orderByRaw("FIELD(id, ".implode(',', $resultIds->toArray()).")")->get()->map(function($model) {
-            return (method_exists($model, 'toSearchable')) ? $model->toSearchable() : $model->toArray();
+            return (method_exists($model, 'toSearch')) ? $model->toSearch() : $model->toArray();
         }) : collect([]);
     }
     
