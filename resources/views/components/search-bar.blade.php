@@ -10,7 +10,6 @@
 }
 #search-bar-component input#search-bar {
     display: block;
-    position: absolute;
     right: 0;
     cursor: text;
     height: 2rem;
@@ -87,7 +86,7 @@
             httpRequest = new XMLHttpRequest();
             httpRequest.open('POST', '/search');
             httpRequest.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
-            httpRequest.send(new URLSearchParams({'search_term': event.target.value, 'search_namespace': "{!! $namespace !!}"}).toString());
+            if (event.target.value.length) httpRequest.send(new URLSearchParams({'search_term': event.target.value, 'search_namespace': "{!! $namespace !!}"}).toString());
             
             httpRequest.onreadystatechange = function() {
                 if (httpRequest.readyState === XMLHttpRequest.DONE) {
