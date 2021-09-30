@@ -1,0 +1,38 @@
+{
+    "name": "dalyio/laravel-search",
+    "description": "A package for Laravel to implement search bars on your application",
+    "homepage": "https://github.com/dalyio/laravel-search",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Steve Daly",
+            "email": "scdaly24@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.4|^8.0",
+        "laravel/framework": "^6.0|^7.0|^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Dalyio\\Search\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Dalyio\\Search\\Providers\\SearchServiceProvider"
+            ]
+        },
+        "branch-alias": {
+            "main": "0.0.1",
+            "master": "0.0.1"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
