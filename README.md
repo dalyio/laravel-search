@@ -137,4 +137,4 @@ Add the following rules and customizations to your application's main css files.
 
 ## License
 
-Laravel Gitpack is open-sourced software licensed under the [MIT license](LICENSE).
+Laravel Search is open-sourced software licensed under the [MIT license](LICENSE).
