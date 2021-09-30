@@ -134,3 +134,7 @@ Add the following rules and customizations to your application's main css files.
     border-bottom: 1px solid #cfd4db;
 }
 ```
+
+## License
+
+Laravel Gitpack is open-sourced software licensed under the [MIT license](LICENSE).
