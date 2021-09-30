@@ -2,7 +2,8 @@
 
 A package for Laravel to add a search bar feature to your application.  Easily add search capabilities on your Eloquent models by adding a search bar component to your application.
 
-[![Latest Stable Version](https://poser.pugx.org/dalyio/laravel-search/v/stable)](https://packagist.org/packages/dalyio/laravel-search)
+[![Latest Unstable Version](http://poser.pugx.org/dalyio/laravel-search/v/unstable)](https://packagist.org/packages/dalyio/laravel-search)
+[![PHP Version Require](http://poser.pugx.org/dalyio/laravel-search/require/php)](https://packagist.org/packages/dalyio/laravel-search)
 [![License](https://poser.pugx.org/dalyio/laravel-search/license)](https://packagist.org/packages/dalyio/laravel-search)
 
 ## Installation
