@@ -1,5 +1,5 @@
 <div id="search-bar-component">
-    <input id="search-bar" name="search_term" type="text" placeholder="Search" style="width: {{ width }}" />
+    <input id="search-bar" name="search_term" type="text" placeholder="Search" style="width: {{ $width }}" />
     <div id="dropdown-menu" role="listbox"></div>
 </div>
 
