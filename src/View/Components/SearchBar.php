@@ -23,6 +23,11 @@ class SearchBar extends Component
     protected $limit;
     
     /**
+     * string|int
+     */
+    protected $width;
+    
+    /**
      * boolean
      */
     protected $useCss;
@@ -35,13 +40,14 @@ class SearchBar extends Component
     /**
      * @return void
      */
-    public function __construct($namespace = 'default', $debounce = 500, $limit = null, $useCss = true)
+    public function __construct($namespace = 'default', $debounce = 500, $limit = null, $width = null, $useCss = true)
     {
         $this->searchService = App::make(\Dalyio\Search\Services\SearchService::class);
         
         $this->namespace = $namespace;
         $this->debounce = $debounce;
         $this->limit = ($limit) ? $limit : config('search.limit', 10);
+        $this->width = ($width) ? $width : config('search.width', '400px');
         $this->useCss = filter_var($useCss, FILTER_VALIDATE_BOOLEAN);
     }
 
@@ -53,6 +59,7 @@ class SearchBar extends Component
         return view('components.search-bar')->with([
             'namespace' => $this->namespace,
             'debounce' => $this->debounce,
+            'width' => $this->width,
             'useCss' => $this->useCss
         ]);
     }
