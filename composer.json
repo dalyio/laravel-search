@@ -1,7 +1,7 @@
 {
-    "name": "dalyio/laravel-challenge",
-    "description": "A package for Laravel to display a code challenger solution",
-    "homepage": "https://github.com/dalyio/laravel-codechallenge",
+    "name": "dalyio/laravel-search",
+    "description": "A package for Laravel to implement search bars on your application",
+    "homepage": "https://github.com/dalyio/laravel-search",
     "license": "MIT",
     "authors": [
         {
@@ -11,23 +11,23 @@
         }
     ],
     "require": {
-        "php": "^7.3|^8.0",
+        "php": ">=7.4",
         "laravel/framework": "^6.0|^7.0|^8.0"
     },
     "autoload": {
         "psr-4": {
-            "Dalyio\\Challenge\\": "src"
+            "Dalyio\\Search\\": "src"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Dalyio\\Challenge\\Providers\\ChallengeServiceProvider"
+                "Dalyio\\Search\\Providers\\SearchServiceProvider"
             ]
         },
         "branch-alias": {
-            "main": "0.0.1-dev",
-            "master": "0.0.1-dev"
+            "main": "0.0.6-dev",
+            "master": "0.0.6-dev"
         }
     },
     "config": {

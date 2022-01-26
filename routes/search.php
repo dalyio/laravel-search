@@ -2,8 +2,8 @@
 
 /*
 |--------------------------------------------------------------------------
-| API Routes
+| Search Routes
 |--------------------------------------------------------------------------
 */
 
-//Route::post('/api/v1', 'SearchController@index');
+Route::post('/search', 'SearchController@index');
